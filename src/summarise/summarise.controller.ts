@@ -1,5 +1,6 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Req } from "@nestjs/common";
 import { SummariseService } from "./summarise.service";
+import { Request } from "express";
 
 @Controller("viaopenai")
 export class SummariseController {
@@ -7,7 +8,7 @@ export class SummariseController {
     }
     
     @Get("getsummary")
-    getSummary() {
-        return this.summariseService.getSummary()
+    getSummary(@Req() req: Request) {
+        return this.summariseService.getSummary(req.query.text)
     }
 }
