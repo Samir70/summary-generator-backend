@@ -46,3 +46,38 @@ Here are some articles that can help you further with this integration:
 
 By following this study program and referring to the official documentation and tutorials, you should be able to quickly learn how to use Nest.js, Jest, and Supertest to build and test your backend that calls the OpenAI API. Good luck!
 ChatGPT Mar 23 Version. Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts
+
+## Critique of response
+
+> ```https://www.youtube.com/watch?v=1Nl9Drs01Ew isn't available anymore. Is there a written article that walks me through setting up paths in a nest.js project? Thanks.```
+
+Response:
+
+I apologize for the outdated link. As an AI language model, I do not have real-time access to the internet, and availability of online resources can change over time. However, I can still provide you with updated and relevant resources for learning Nest.js, Jest, Supertest, and the OpenAI API. Here are some alternative resources:
+
+Nest.js Resources:
+
+    Nest.js Official Documentation: https://docs.nestjs.com/
+    Nest.js Crash Course - FreeCodeCamp: https://www.freecodecamp.org/news/nestjs-crash-course/
+
+Jest Resources:
+
+    Jest Official Documentation: https://jestjs.io/docs/en/getting-started
+    Jest Crash Course - FreeCodeCamp: https://www.freecodecamp.org/news/jest-crash-course/
+
+Supertest Resources:
+
+    Supertest Official Documentation: https://github.com/visionmedia/supertest
+    Testing HTTP Requests in Nest.js with Supertest - DigitalOcean Community: https://www.digitalocean.com/community/tutorials/testing-http-requests-in-nest-js-with-supertest
+
+OpenAI API Resources:
+
+    OpenAI API Documentation: https://beta.openai.com/docs/api-reference/introduction
+    OpenAI API Quick Start Guide - OpenAI Documentation: https://beta.openai.com/docs/api-reference/quickstart/
+
+As for articles specifically related to setting up paths in a Nest.js project, you can refer to the official Nest.js documentation on routing and controllers, which provides comprehensive information on how to define routes and handle HTTP requests in a Nest.js application:
+
+    Nest.js Official Documentation - Routing: https://docs.nestjs.com/techniques/routing
+    Nest.js Official Documentation - Controllers: https://docs.nestjs.com/controllers
+
+I hope these resources help you in your learning journey to build a Nest.js backend that calls the OpenAI API and tests it with Jest and Supertest. If you have any further questions or need more guidance, feel free to ask!
