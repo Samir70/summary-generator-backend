@@ -15,10 +15,10 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
+  it('/testenv (GET)', () => {
     return request(app.getHttpServer())
-      .get('/')
+      .get('/testenv')
       .expect(200)
-      .expect('Hello World!');
+      .expect('This environment has ENVTEST = Hello from .ENV');
   });
 });
