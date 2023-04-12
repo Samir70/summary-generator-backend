@@ -9,8 +9,8 @@ export class SummariseService {
     openai = new OpenAIApi(this.configuration);
 
     async getSummary(text: String) {
-        let msg = (text === "frog pond splash") ? "The text you submitted can be summarised as follows: It is a translation of a haiku expressing the inevitability of actions when free will is nothing but an illusion." : "Give me a moment, I'm still reading."
-        if (text.length > 20) {
+        let msg = (text === "frog pond splash") ? "The text you submitted can be summarised as follows: It is a translation of a haiku expressing the inevitability of actions when free will is nothing but an illusion." : "That's so much to summarise. Give me a moment, I'm still reading."
+        if (text.split(" ").length > 20) {
             const completion = await this.openai.createCompletion({
                 model: "text-davinci-003",
                 max_tokens: 50,
