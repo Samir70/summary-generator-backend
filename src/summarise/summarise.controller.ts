@@ -1,4 +1,4 @@
-import { Controller, Get, Req } from "@nestjs/common";
+import { Controller, Get, Query } from "@nestjs/common";
 import { SummariseService } from "./summarise.service";
 import { Request } from "express";
 
@@ -8,7 +8,10 @@ export class SummariseController {
     }
     
     @Get("getsummary")
-    getSummary(@Req() req: Request) {
-        return this.summariseService.getSummary(req.query.text)
+    getSummary(@Query() query: any) {
+        if (!query || !query.text) {
+            return {text: "No text was sent with this request", summary: "You've not read the docs for this API, have you?"}
+        }
+        return this.summariseService.getSummary(query.text)
     }
 }

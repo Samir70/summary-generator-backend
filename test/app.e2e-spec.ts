@@ -22,10 +22,16 @@ describe('AppController (e2e)', () => {
       .expect('This environment has ENVTEST = Hello from .ENV');
   });
 
-  it('gets a summary using the path /viaopenai/getsummary (GET)', () => {
+  it('gets summary of frog pond splash via path /viaopenai/getsummary (GET)', () => {
     return request(app.getHttpServer())
       .get('/viaopenai/getsummary?text=frog pond splash')
       .expect(200)
       .expect({text: "frog pond splash", summary:"The text you submitted can be summarised as follows: It is a translation of a haiku expressing the inevitability of actions when free will is nothing but an illusion."});
+  });
+  it('gets joke summary if no text sent in query /viaopenai/getsummary (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/viaopenai/getsummary')
+      .expect(200)
+      .expect({text: "No text was sent with this request", summary:"You've not read the docs for this API, have you?"});
   });
 });
