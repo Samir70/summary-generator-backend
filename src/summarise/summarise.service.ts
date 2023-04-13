@@ -13,8 +13,8 @@ export class SummariseService {
         if (text.split(" ").length > 20) {
             const completion = await this.openai.createCompletion({
                 model: "text-davinci-003",
-                max_tokens: 50,
-                prompt: "Can you please give me a short summary (upto 40 words) of the following text: " + text,
+                max_tokens: 100,
+                prompt: "Can you please give me a short summary (upto 75 words) of the following text: " + text,
                 temperature: 0.6,
             });
 
