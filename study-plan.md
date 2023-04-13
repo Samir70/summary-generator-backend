@@ -1,6 +1,21 @@
 # summary-generator-backend
 Practise project for nest.js, jest and supertest calling the openAI API
 
+## summary of my interaction with openAI
+
+Generally, it was useful I felt I got a better result than with google -- especially for my final request. Some of the resources it suggested where no longer available -- videos mainly. But, when I didn't find the suggested freeCodeCamp course, I searched the freeCodeCamp site and found one that was useful.
+
+In future,  I will:
+- Explicitly ask for resources that compare the new tech to tech I know. While I told openAI that I knew express, it started me off with the nestjs docs rather than resources that compare using express alone and using nest. 
+- Ask for projects that use the tech with a walk through of building up the project.
+
+These were the most useful resources. The first two were found via suggestions by openAI (but not the actual suggestions). The third I found on google.
+- https://platform.openai.com/docs/quickstart/build-your-application
+- https://www.freecodecamp.org/news/learn-nestjs-by-building-a-crud-api/ 
+- https://www.tomray.dev/nestjs-unit-testing
+
+
+
 ## Learning how to do this
 
 I made an account at openAI and asked the following question:
@@ -81,3 +96,35 @@ As for articles specifically related to setting up paths in a Nest.js project, y
     Nest.js Official Documentation - Controllers: https://docs.nestjs.com/controllers
 
 I hope these resources help you in your learning journey to build a Nest.js backend that calls the OpenAI API and tests it with Jest and Supertest. If you have any further questions or need more guidance, feel free to ask!
+
+## Feedback and further question
+
+Thanks for your help. You are much better than google. I have now written a nestjs server that sends requests to openai and can forward the response.
+
+It's a shame that you don't have real time access to the internet. The crash course from freecodecamp also isn't available, but I searched their website and found this: https://www.freecodecamp.org/news/learn-nestjs-by-building-a-crud-api/ it includes much more than I needed for my nestjs server, but I can skip those parts. Maybe you can use that link if someone else asks about nestjs.
+
+I also used https://platform.openai.com/docs/quickstart/build-your-application to help me write the code.
+
+Now I want to write a chrome extension which will be able to offer a user the chance to summarise the text they highlight on a webpage. I have written some simple chrome extensions before, following the examples on https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
+
+In the role of a professional coder, how would you code a chrome extension which offers the user a chance to send an http request when they highlight some text on a webpage?
+
+## response:
+
+As a professional coder, here's a high-level overview of how you could code a Chrome extension that sends an HTTP request when the user highlights text on a webpage:
+
+- Define the manifest.json: Create a manifest.json file in your extension's directory. This file serves as the configuration for your Chrome extension and defines its permissions, background scripts, and other important details.
+- Add event listeners: In your background script, add an event listener for the "mouseup" or "selectionchange" event, which will trigger whenever the user highlights text on a webpage.
+- Extract the highlighted text: In the event handler for the "mouseup" or "selectionchange" event, use the appropriate APIs (such as document.getSelection() or window.getSelection()) to extract the highlighted text from the webpage.
+- Create the HTTP request: Once you have the highlighted text, you can create an HTTP request using the Fetch API or any other library of your choice. You can set the appropriate headers, payload, and endpoint to send the request to.
+- Handle the HTTP response: When the HTTP request returns a response, you can handle it in the callback or promise resolution. You can process the response and take appropriate actions, such as displaying a summary to the user or performing any other desired functionality.
+- Update the UI: If you want to show a summary or any other information to the user, you can update the UI of your extension's popup or content script using the DOM manipulation APIs or any front-end framework of your choice.
+- Test and debug: Make sure to thoroughly test your Chrome extension in different scenarios and environments, and use the Chrome DevTools for debugging and troubleshooting any issues that may arise.
+
+Here are some resources that can help you in implementing the above steps:
+
+    Chrome Extension API: https://developer.chrome.com/docs/extensions/mv3/mv3-overview/
+    Fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+    Introduction to Content Scripts - Chrome Extension Documentation: https://developer.chrome.com/docs/extensions/mv3/messaging/
+
+I hope this helps you in building your Chrome extension for text summarization. If you have any specific questions or need further assistance, feel free to ask!
