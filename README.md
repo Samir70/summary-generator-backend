@@ -36,7 +36,7 @@ After cloning this repo, install the dependencies:
 $ npm install
 ```
 
-Before running the server, you need to go to OpenAI and get an `OPENAI_API_KEY`, and save this in a `.env` file as `OPENAI_API_KEY="your key goes here"`.
+Before running the server, you need to login to OpenAI and get an `OPENAI_API_KEY`, and save this in a `.env` file as `OPENAI_API_KEY="your key goes here"`.
 
 To run the server:
 
@@ -58,7 +58,7 @@ response:
     summary:"The text you submitted can be summarised as follows: It is a translation of a haiku expressing the inevitability of actions when free will is nothing but an illusion."
 }	
 ```
-To actually use OpenAI for the summary, you need to send text longer than 20 words.
+To actually use OpenAI for the summary, rather than get preprogrammed responses, you need to send text longer than 20 words.
 
 ## Using the chrome extension
 
