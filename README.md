@@ -23,6 +23,9 @@ I enjoyed this as a programming challenge, but decided from the outset to be a b
 
 I haven't made the React popup page, with MongoDB to store previous summaries. These are things I have used in the past (and my React skills do need refreshing and updating). You can find projects using that tech on my github.
 
+- [MongoDB, Vue, netlify functions](https://github.com/Samir70/gladiators)
+- [React](https://github.com/Samir70/Word-Box)
+
 For the things I have done: I don't feel that it is perfect. I know that I need to test the server better: I couldn't get the mocking to work, so there is no test of the interaction with OpenAI. I look forward to further feedback.
 
 ## Installation and usage of the server
