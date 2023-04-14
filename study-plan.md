@@ -1,22 +1,23 @@
-# summary-generator-backend
-Practise project for nest.js, jest and supertest calling the openAI API
+# Getting advice from OpenAI
+
+Since I was going to have to make an account at OpenAI to get this done, and it involved quite a bit of new tech, I thought I would ask for a study plan.
 
 ## summary of my interaction with openAI
 
-Generally, it was useful I felt I got a better result than with google -- especially for my final request. Some of the resources it suggested where no longer available -- videos mainly. But, when I didn't find the suggested freeCodeCamp course, I searched the freeCodeCamp site and found one that was useful.
+Generally, it was useful.
+
+I felt I got a better result than with google -- especially for my final request. Some of the resources it suggested where no longer available -- videos mainly. But, when I didn't find the suggested freeCodeCamp course, I searched the freeCodeCamp site and found one that was useful.
 
 In future,  I will:
-- Explicitly ask for resources that compare the new tech to tech I know. While I told openAI that I knew express, it started me off with the nestjs docs rather than resources that compare using express alone and using nest. 
-- Ask for projects that use the tech with a walk through of building up the project.
+- Explicitly ask for resources that compare the new tech to things I know. While I told openAI that I knew express, it started me off with the nestjs docs rather than resources that compare using express to using nest. 
+- Ask for projects that use the tech with a walk through of building up a project.
 
 These were the most useful resources. The first two were found via suggestions by openAI (but not the actual suggestions). The third I found on google.
 - https://platform.openai.com/docs/quickstart/build-your-application
 - https://www.freecodecamp.org/news/learn-nestjs-by-building-a-crud-api/ 
 - https://www.tomray.dev/nestjs-unit-testing
 
-
-
-## Learning how to do this
+## Learning how to do this -- first request
 
 I made an account at openAI and asked the following question:
 
